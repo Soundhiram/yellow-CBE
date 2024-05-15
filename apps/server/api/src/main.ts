@@ -4,18 +4,29 @@
  */
 
 import express from 'express';
-import * as path from 'path';
+import path from 'path';
+import mongoose from 'mongoose';
+import studentRoutes from './students/students-route';
+import cors from 'cors';
+
+
+
+// MongoDB connection
+mongoose.connect('mongodb+srv://jamster:Soundar@jamsterapp.cuxjnde.mongodb.net/books')
 
 const app = express();
+app.use(express.json());
+app.use(cors());
+
+
+// Routes
+app.use('/api/students', studentRoutes);
 
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
-app.get('/api', (req, res) => {
-  res.send({ message: 'Welcome to api!' });
-});
 
-const port = process.env.PORT || 3333;
+const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
-  console.log(`Listening at http://localhost:${port}/api`);
+    console.log(`Listening at http://localhost:${port}/api/students`);
 });
 server.on('error', console.error);
