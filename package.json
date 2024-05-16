@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "api":"npx nx run api:serve" 
+    "api":"npx nx run api:serve",
+    "web":"npx nx run yellow:serve" 
   
   },
   "private": true,
