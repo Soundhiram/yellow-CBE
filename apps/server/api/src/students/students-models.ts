@@ -1,4 +1,3 @@
-// models/studentModel.ts
 import mongoose, { Document, Schema } from 'mongoose';
 
 interface IStudent extends Document {

@@ -1,4 +1,3 @@
-// routes/studentRoutes.ts
 import express from 'express';
 import studentController from '../students/students-controller';
 
