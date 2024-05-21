@@ -12,7 +12,7 @@ import cors from 'cors';
 
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://jamster:Soundar@jamsterapp.cuxjnde.mongodb.net/books')
+mongoose.connect('mongodb+srv://jamster:Soundar@jamsterapp.cuxjnde.mongodb.net/yellow')
 
 const app = express();
 app.use(express.json());

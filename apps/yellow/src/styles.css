@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 *{
     margin: 0 !important;
+    font-family: "Roboto", sans-serif;
+}
+.input-box{
+width: 286px !important;
+height: 42px !important;
+border-radius: 6px !important;
+
 }

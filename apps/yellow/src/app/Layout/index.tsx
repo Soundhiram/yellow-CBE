@@ -51,15 +51,14 @@ const AppLayout: React.FC = () => {
 
       <Layout className="site-layout">
         <Header className="site-layout-background" style={{ padding: 0 }}>
-          {isMobile && (
-            <Button
-              type="primary"
-              onClick={toggle}
-              style={{ marginLeft: '1rem' }}
-            >
-              {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-            </Button>
-          )}
+          <div className="header-tongle">
+            <h1>Students</h1>
+            {isMobile && (
+              <Button type="primary" onClick={toggle} className="tonggle-btn">
+                {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+              </Button>
+            )}
+          </div>
         </Header>
 
         <Content className="content-wrapper">

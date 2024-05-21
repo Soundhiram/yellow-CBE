@@ -6,7 +6,7 @@ interface IStudent extends Document {
     email: string;
     phone: string;
     enrollNumber: string;
-    dateOfAdmission: Date;
+    dateOfAdmission:string;
     archived: boolean;
 }
 
@@ -15,7 +15,7 @@ const studentSchema: Schema = new Schema({
     email: String,
     phone: String,
     enrollNumber: String,
-    dateOfAdmission: Date,
+    dateOfAdmission: String,
     archived: { type: Boolean, default: false }
 });
 
